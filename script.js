@@ -13,5 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
       headings[imageIndex].classList.add("show")
     }
     setInterval(changeBackground,3000)
-  
+    
   })
+  
