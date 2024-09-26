@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: "Sora", sans-serif;
+}
+.container-1{
+    height: 110vh;
+    width: 100%;
+    position: relative;
+    display: flex   ;
+}
+.section-1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+}
+.left-1{
+    width: 50%;
+    height: 100%;
+    padding-top: 100px;
+
+}
+.right-1{
+    height: 100%;
+    width: 50%;
+    background-color: rgb(17, 65, 53);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 80%;
+    width: 60%;
+    margin-left: 20px;
+}
+.left-content > *{
+    padding-top: 30px;
+}
+.left-heading{
+    font-size: 45px;
+    color: rgb(17, 65, 53);
+    letter-spacing: 1px;
+
+}
+.right-para{
+    width: 85%;
+}
+.left-button button{
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: none    ;
+    background-color: rgb(243, 208, 8);
+    color:green;
+    font-size: 18px;
+}
+.right-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 80%;
+    width: 60%;
+    margin-left: 20px;
+    
+}
+.right-content p{
+    font-size: 18px;
+    line-height: 26px;
+    color: white;
+}
+.right-content ul{
+    list-style: none;
+    font-size: 15px;
+    line-height: 26px;
+    color: white;
+}
+.right-button button{
+    padding: 5px 0px;
+    border: none    ;
+    background-color: transparent;
+    color:rgb(243, 208, 8);
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid rgb(243, 208, 8);
+}
+.right-content > *{
+    padding-top: 30px;
+}
+.section-2{ 
+    min-height: 500px;
+    min-width: 300px;
+    position: absolute;
+    top: 25%;
+    left: 38%;
+    z-index: 10;
+}
+
+.fade-container{
+    position: relative;
+    max-width:100%;
+    min-width: 100%;
+    min-height: 80vh;
+  }
+  .fading-images{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  } 
+  .showing{
+    opacity: 1;
+  }
+  
+  .header-content{
+    position: relative;
+    height: 50px;
+    width: 100%;
+  }
+ 
+  .fading-heading{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    color: white
+
+  }
+  .show{
+    opacity: 1;
+  }
+
+  
